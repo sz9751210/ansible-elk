@@ -1,0 +1,20 @@
+[localhost]
+localhost internal_ip=127.0.0.1
+
+[general]
+#{{ hostname }} internal_ip={{ IP }} zone={{ zone }}
+
+[elastic_master]
+#{{ hostname }} internal_ip={{ IP }} zone={{ zone }} node_name={{ node_name }} node_role={{ node_role }}
+
+[elastic_slave]
+#{{ hostname }} internal_ip={{ IP }} zone={{ zone }} node_name={{ node_name }} node_role={{ node_role }} master_ip={{ master_ip }}
+
+[logstash]
+#{{ hostname }} internal_ip={{ IP }} zone={{ zone }}
+
+[kibana]
+#{{ hostname }} internal_ip={{ IP }} zone={{ zone }}
+
+[filebeat]
+#{{ hostname }} internal_ip={{ IP }} zone={{ zone }}
