@@ -85,13 +85,21 @@
 ## 建置流程
 elasticsearch_master -> elasticsearch_slave -> logstash -> kibana
 
+### 安裝方式
 - 指令
 ```shell
 ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i inventory.instance.create.yml create_xxx_instance.yaml -v
 ```
 
+- golang
+```
+go run main.go
+```
+![gif](doc/1.gif)
+
 ## todo
 
 - [ ] elasticsearch playbook 優化
-- [ ] 添加filebeat role
+- [x] 添加filebeat role
 - [ ] disk 修改建置資料夾
+- [ ] 新增elasticsearch exporter
